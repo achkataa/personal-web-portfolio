@@ -1,0 +1,291 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+/* description */
+
+.description {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.description span {
+    color: #aaa;
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.description .heading h1 {
+    margin-top: 5px;
+    font-size: 36px;
+}
+
+.description .dev h2 {
+    color: #18d26e;
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.description .dev p {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.description .dev ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 0.4px;
+    font-size: 17px;
+}
+
+.description .dev ul i {
+    margin-right: 10px;
+    color: #18d26e;
+    font-weight: normal;
+}
+
+/* skills */
+
+.skills {
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+}
+
+.skills .container h2 {
+    margin-bottom: 10px;
+}
+
+.skills > h2 {
+    margin-bottom: 20px;
+}
+
+.skills h2 span {
+    color: #aaa;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #18d26e;
+    font-size: 16px;
+}
+
+.skills .progress-bar {
+    margin-bottom: 15px;
+}
+
+
+.skills .progress-bar .skill-percentage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skills .progress-bar .bar {
+    width: 100%;
+    height: 13px;
+    background-color: #333;
+    position: relative;
+}
+
+.skills .progress-bar .bar-html::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+.skills .progress-bar .bar-css::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+.skills .progress-bar .bar-js::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+.skills .progress-bar .bar-python::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+.skills .progress-bar .bar-django::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+.skills .progress-bar .bar-git::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: #18d26e;
+}
+
+/* interests */
+
+.interests {
+    padding: 20px;
+}
+
+.interests h2 span {
+    color: #aaa;
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.interests .interests-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+ 
+.interests .interests-list li{
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+    transition: all 0.2s linear;
+}
+
+.interests .interests-list li:hover {
+    opacity: 0.7;
+}
+
+.interests .interests-list li i {
+    width: 40px;
+    position: relative;
+
+}
+
+.interests .interests-list li .swim {
+    color: #ffbb2c;
+}
+
+.interests .interests-list li .run {
+    color: #5578ff;
+}
+
+.interests .interests-list li .fit {
+    color: #e361ff;
+}
+
+.interests .interests-list li .box {
+    color: #e80368;
+}
+
+
+.interests .interests-list li .trade {
+    color: #47aeff;
+}
+
+
+/* footer */
+
+
+footer {
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+
+@media (min-width: 850px) {
+    .skills, .interests, .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .interests ul {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    
+    .skills {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .interests {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interests ul {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+

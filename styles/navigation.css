@@ -1,0 +1,96 @@
+.hidden {
+    display: none;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 20;
+}
+
+.navbar-mobile {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    right: 20px;
+    height: 50vh;
+    background-color: black;
+    border: 3px solid #2c2b2b;
+    opacity: 0.9;
+    z-index: 10;
+    padding: 20px;
+}
+
+.navbar-mobile li {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.navbar-mobile a {
+    color: lightgray;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar-mobile a:hover {
+    color: #18d26e;
+}
+
+.active {
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 5px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-img {
+    width: 130px;
+    height: 100px;
+}
+
+header nav {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+@media (min-width: 600px) {
+    header nav .nav-icon {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .nav-list li a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .nav-list li {
+        transition: all 0.2s linear;
+        font-size: 17px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-list li:hover {
+        transform: scale(1.1);
+    }
+
+    .nav-list li a:hover {
+        color: #18d26e;
+    }
+
+}
